@@ -6,11 +6,11 @@ import java.util.List;
 import com.Changement;
 
 public class Note {
-    private final int valeur; 
+    private final double valeur; 
     private List<Changement> changement = new ArrayList<>();
 
     
-    public int getValeur() {
+    public double getValeur() {
         return valeur;
     }
 
@@ -25,7 +25,7 @@ public class Note {
     }
 
 
-    public Note(int valeur, List<Changement> changement) {
+    public Note(double valeur, List<Changement> changement) {
         this.valeur = valeur;
         this.changement = changement;
     } 

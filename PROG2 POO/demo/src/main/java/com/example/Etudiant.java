@@ -8,6 +8,7 @@ public class Etudiant extends Personne {
     private final String groupe; 
     private final Tuteur tuteur;
     private final List<Note> notes; 
+    private final List<Cours> cours; 
 
     public String getGroupe() {
         return groupe;
@@ -17,14 +18,18 @@ public class Etudiant extends Personne {
     }
     
     public Etudiant(int id, String nom, String prenom, LocalDate dateNaissance, String email, String numero,
-            String groupe, Tuteur tuteur, List<Note> notes) {
+            String groupe, Tuteur tuteur, List<Note> notes, List<Cours> cours) {
         super(id, nom, prenom, dateNaissance, email, numero);
         this.groupe = groupe;
         this.tuteur = tuteur;
         this.notes = new ArrayList<>();
+        this.cours= new ArrayList<>();
     }
     public List<Note> getNotes() {
         return notes;
+    }
+    public List<Cours> getCours() {
+        return cours;
     } 
 
     
