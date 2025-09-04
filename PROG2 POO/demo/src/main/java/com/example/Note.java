@@ -3,8 +3,6 @@ package com.example;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.Changement;
-
 public class Note {
     private final double valeur; 
     private List<Changement> changement = new ArrayList<>();

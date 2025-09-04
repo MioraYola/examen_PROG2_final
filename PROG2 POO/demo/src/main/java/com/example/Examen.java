@@ -77,8 +77,8 @@ public class Examen {
         double total= 0; 
         return total += (noteExamen.getValeur() * coefficient)/ coefficient ;
     }
-    
+
     public double getExamGrade(Examen exam, Etudiant etudiant, Instant t){
-        double 
+        return etudiant.getNotes().
     }
 }

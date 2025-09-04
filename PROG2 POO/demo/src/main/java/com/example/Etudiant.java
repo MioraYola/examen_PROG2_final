@@ -1,5 +1,6 @@
 package com.example;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +33,8 @@ public class Etudiant extends Personne {
         return cours;
     } 
 
-    
+    public double getCourseGrade(Cours course, Etudiant student, Instant t){
+        double total=0; 
+        
+    }
 }
